@@ -6,7 +6,7 @@ Arduino display driver for the assembly auv's tiny tube display system
 <p>A script runs on the main computer and publishes to the rostopics led_strip_color (std_msgs/ColorRGBA), led_strip_pattern (std_msgs/Int32), and lcd_display_message (std_msgs/String) based on the current state of the robot.  The display driver subscribes to these topics and updates the LED strip and LCD display accordingly.</p>
 
 In order to setup and run everything correctly, do the following:
-* Start subscribing by uploading the program to the display driver (&#8984; U in the Arduino IDE)
+* Upload the arduino program to the display driver (&#8984; U in the Arduino IDE)
 * Connect the display driver to the main computer with a USB cable and connect to the power source
 * We need roscore running before we can do anything else, so do `roscore`
 * Initialize the node using `rosrun rosserial_python serial_node.py _port:=/dev/ttyACM0 _baud:=115200`
