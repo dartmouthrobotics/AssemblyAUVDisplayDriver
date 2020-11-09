@@ -22,6 +22,7 @@ import rospy
 import serial
 
 from std_msgs.msg import String, Int8, Float32, ColorRGBA
+from msg/custom.msg import BluerovDisplayMessage
 
 buzzer_frequency = 440 # Hz
 buzzer_interval = 0 # ms
